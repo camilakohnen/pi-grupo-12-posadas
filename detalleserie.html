@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body class="body">
+    <!--HEADER-->
+    <header class="header">
+        <!--Lista Home, Favorito, Genero-->
+        <section>
+          <ul class="listaheader">
+            <li class="liheader"><a class="recuadro" href="./index.html">HOME</a></li>
+            <li class="liheader"><a class="recuadro" href="./favoritos.html">FAVORITOS</a></li>
+            <li class="liheader"><a class="recuadro" href="./genero.html">GÉNEROS</a></li>
+          </ul>
+        </section>
+         <!--Logo-->
+       <img class="logo" src="./img/Logo InssFlix.png" alt="logo">
+        <!--Búsqueda-->
+        <nav class="navegacion">
+            <form action="./detallebusqueda.html" method="get">
+                <input type="text" placeholder="Escribe tu búsqueda aquí" value="">
+                <button type="submit">Buscar</button>
+            </form>   
+        </nav>
+    </header>
+
+    <!--MAIN-->
+    <main class="maindetalle">
+        <section class="sectiondetalle">
+            <img class="imgdetalle" src="./img/gossipGirl.jpeg" alt="Gossip Girl">
+            <h1 class="h1detalle">Gossip Girl</h1>
+            <ul class="iconos">
+                <li class="iconoli"><i class="fa-solid fa-heart"></i></li>
+                <li class="iconoli"><i class="fa-regular fa-circle-play"></i></li>
+                <li class="iconoli"><i class="fa-solid fa-download"></i></li>
+            </ul>
+
+            <p><strong>2012 | 6 temporadas | 16+</strong></p>
+            <p>Fecha de estreno: 26 de Abril de 2018 </p>
+            <p class="parrafo">Género: <a href="./detallegenero.html">Drama adolescente</a></p>
+            <p>Un grupo de estudiantes privilegiados de Manhattan consiguen todo lo que se proponen. Hasta que un blogger anónimo se dedica a seguir cada paso que dan.</p>
+            <form action="./favoritos.html" method="get">
+                <label for="favoritos">¿Desea agregar la película a favoritos?</label>
+                <a class="sifavoritos" href="./favoritos.html"><input type="radio" name="fav" id="laPelicula" value="Si"><span>Si</span></a>
+                <input type="radio" name="fav" id="laPelicula" value="No"><span>No</span>
+            </form>
+        </section>
+    </main>
+
+    <!--FOOTER-->
+<footer class="footer">
+    <h4 class="h4footer">SOFIA GOERLING, CAMILA KOHNEN</h4>
+</footer>
+
+</body>
+</html>
