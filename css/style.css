@@ -34,6 +34,7 @@
 .logo{
     display: flex;
     height: 100px;
+    align-content: center;
 }
 
 /*--FOOTER--*/
@@ -91,7 +92,8 @@
 .tituloFavoritos {
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   margin: 40px;
+    margin: 40px;
+
 
 }
 
@@ -99,22 +101,39 @@
     color: black;
 }
 
+
 .navegacion {
     margin-right: 20px;
 
 }
 
-@media (max-width:420px) {
+@media (max-width:420px) { 
     .body{
         background-color: rgb(22, 21, 21);
     }
+   
     .logo{ align-content: center;}
+    
     .footer{width: 100%;}
+   
     .peliculas {flex-direction: column; align-content: center ;}
+    
     .listaheader {flex-direction: column;}
+   
     .header {width:100%; flex-direction: column;}
+    
     .main{align-content: center;}
-    .titulospelis {margin-top: 50px; align-content: center;}
+    
+    .titulospelis {margin-top: 50px; display: center;}
+    
     .h4footer{margin: 0px; align-items: center;} 
+   
     form{align-content: center; justify-content: center;}
-}
+    
+    .main {width: 100%;}
+    
+    .navegacion {
+        margin-right: 0px;}
+    }
+
+   
