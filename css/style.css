@@ -220,5 +220,11 @@
     .navegacion {margin-right: 0px;}
 
    .secciondetalle {width: 100%;}
-   .maindetalle {padding-left: 0%;    align-items: center}}
+   .maindetalle {padding-left: 0%;    align-items: center}
+   .sectionpeliculasyseries {flex-direction: column;}
+   .ul {list-style: none;}
+   .h2generos {margin-left: 8%;}
+   
+
+   }
    
