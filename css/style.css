@@ -204,6 +204,12 @@
     justify-content: flex-start;
     margin: 20px;
 }
+
+.articlebusqueda{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 @media (max-width:420px) {
     .body{
         background-color: rgb(22, 21, 21);}
