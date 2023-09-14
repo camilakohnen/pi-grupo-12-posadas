@@ -235,11 +235,11 @@
    .sectionpeliculasyseries {flex-direction: column;}
    .ul {list-style: none;}
    .h2generos {margin-left: 8%;}
-
-
-
-
-
-
+   .sectiondetallegenero {flex-direction: column;}
+   .sectionfavs2 {flex-direction: column; align-items: center;}
+   .sectiondetallegenero {
+    margin: 0%;
+    align-items: center;}
+    .sectiondetalle {width: 70%;}
 
 } 
