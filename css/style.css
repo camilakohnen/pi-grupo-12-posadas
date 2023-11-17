@@ -183,9 +183,15 @@
 .button{
     background-color: rgb(12, 12, 12);
     color: white;
+    margin : 10px; 
 }
 a{
     color: inherit;
+}
+
+.boton{
+    display: flex;
+    margin-bottom : 15px;
 }
 
 /*--GENERO--*/
@@ -273,6 +279,7 @@ a{
     align-items:center;
     justify-content: center;
 }
+
 @media (max-width:420px) {
     .body{
         background-color: rgb(22, 21, 21);}
@@ -282,6 +289,10 @@ a{
     .footer{width: 100%;}
    
     .peliculas {flex-direction: column; align-content: center ;}
+
+    .peliculas2{flex-direction: column; align-content: center ;}
+
+    .series{flex-direction: column; align-content: center ;}
     
     .listaheader {flex-direction: column;    align-items: center}
    
@@ -309,7 +320,9 @@ a{
    .sectiondetallegenero {
     margin: 0%;
     align-items: center;}
-    .sectiondetalle {width: 70%;}
+    .sectiondetalle {width: 100%;}
     .articlebusqueda {align-items: center;}
     .sectionbanner{display: none;}
-} 
+
+    .imgdetallegenero{padding:20px;}
+}
