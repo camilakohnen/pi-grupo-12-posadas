@@ -64,7 +64,7 @@ fetch(url4)
                 if (data.results.length>0){
                     for (let index = 0; index < 5; index++) {
                         info += `<article class="article">
-                        <img class="imgdetalle" src="https://image.tmdb.org/t/p/w500/${data.results[index].poster_path}" alt="img no disponible";
+                        <a href = "./detallepelicula.html?id=${data.results[index].id}"><img class="imgdetalle" src="https://image.tmdb.org/t/p/w500/${data.results[index].poster_path}" alt="img no disponible"</a>;
                         <h4 class ="h1detalle">${data.results[index].title}</h4>
 
                         </article`

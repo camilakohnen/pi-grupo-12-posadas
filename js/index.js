@@ -17,8 +17,8 @@ fetch(endPointPeliculasPopulares)
                 <a href="./detallepelicula.html?id=${data.results[i].id}">
                 <img class="fotopelis" src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" alt="">
                 </a>
-                <a class="primera" href="./detallepelicula.html?id=${data.results[i].id}"><h4 class="h4home">${data.results[i].title}</h4></a>
-                <a class="segundo" href="./detallepelicula.html?id=${data.results[i].id}"><h3 class="h4bhome">${data.results[i].release_date}</h3></a>
+                <a href="./detallepelicula.html?id=${data.results[i].id}"><h4 class="h4home">${data.results[i].title}</h4></a>
+                <a href="./detallepelicula.html?id=${data.results[i].id}"><h3 class="h4bhome">${data.results[i].release_date}</h3></a>
                 </article>`}
                 
     })
@@ -43,8 +43,9 @@ fetch(endPointSeriesPopulares)
                 <a href="./detalleserie.html?id=${data.results[i].id}">
                 <img class="fotopelis" src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" alt="">
                 </a>
-                <a class="primera" href="./detalleserie.html?id=${data.results[i].id}"><h4 class="h4home">${data.results[i].title}</h4></a>
-                <a class="segundo" href="./detalleserie.html?id=${data.results[i].id}"><h3 class="h4bhome">${data.results[i].release_date}</h3></a>
+                <a href="./detalleserie.html?id=${data.results[i].id}"><h4 class="h4home">${data.results[i].name}</h4></a>
+                <p> ${data.results[i].first_air_date} </p>
+                <a href="./detalleserie.html?id=${data.results[i].id}"><h3 class="h4home"></h3></a>
                 </article>`}
             
     })
@@ -69,8 +70,8 @@ fetch(endPointPeliculasValoradas)
             <a href="./detallepelicula.html?id=${data.results[i].id}">
             <img class="fotopelis" src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" alt="">
             </a>
-            <a class="primera" href="./detallepelicula.html?id=${data.results[i].id}"><h4 class="h4home">${data.results[i].title}</h4></a>
-            <a class="segundo" href="./detallepelicula.html?id=${data.results[i].id}"><h3 class="h4bhome">${data.results[i].release_date}</h3></a>
+            <a href="./detallepelicula.html?id=${data.results[i].id}"><h4 class="h4home">${data.results[i].title}</h4></a>
+            <a href="./detallepelicula.html?id=${data.results[i].id}"><h3 class="h4home">${data.results[i].release_date}</h3></a>
             </article>`}
         
     })
