@@ -215,17 +215,22 @@ a{
     flex-direction: row;
     justify-content: space-evenly;
 }
-
 /*--DETALLE GENERO--*/
 
 .maingenero{display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    margin-bottom: 0px
    }
+
 .imgdetallegenero{
     height: 300px;
 }
 .sectiondetallegenero{ padding: 10px;
+ display:flex ;
+ justify-content: space-between;
+
 }
+
 .h4detallegenero{
     display: flex;
     justify-content: center;

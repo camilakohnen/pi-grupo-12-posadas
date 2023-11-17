@@ -30,10 +30,10 @@ fetch(urlgpeliculas)
 
     .then(function(data){
         console.log(data)
-        let pys  = document.querySelector(".sectionseries")
+        let ps  = document.querySelector(".sectionseries")
         for (let index = 1; index < 10; index++){
-            pys.innerHTML += `<ul> 
-            <li> <a class="listadetallegenero" href="./detallegenero.html?idgen=${data.genres[index].id}"> ${data.genres[index].name}</a></li>
+            ps.innerHTML += `<ul> 
+            <li> <a class="listadetallegenero" href="./detallegenero.html?idgen=${data.genres[index].id}&nombreGen=${data.genres[index].name}"> ${data.genres[index].name}</a></li>
      
         </ul>`}
     })
