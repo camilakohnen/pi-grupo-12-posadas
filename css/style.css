@@ -70,6 +70,22 @@
     margin: 15px;
     justify-content: space-between;
 }
+
+.series{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    margin: 15px;
+    justify-content: space-between;
+}
+
+.peliculas2{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    margin: 15px;
+    justify-content: space-between;
+}
 .article{
     display: flex;
     flex-direction: column;
@@ -78,6 +94,8 @@
 }
 .fotopelis {
     height: 300px;
+  
+    
 }
 .fotoseries{
     height: 300px;
@@ -87,6 +105,8 @@
     font-size: 25px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    margin: 20px;
+   display: flex;
+    flex-direction: row;
 }
 
 .seriespopulares{
@@ -173,6 +193,7 @@ a{
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 20px;
+    margin-bottom: 250px;
 }
 
 .h1generos{

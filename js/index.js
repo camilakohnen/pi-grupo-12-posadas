@@ -11,7 +11,7 @@ fetch(endPointPeliculasPopulares)
 
     .then(function(data){
         console.log(data)
-        let documento = document.querySelector(".pelispopulares")  
+        let documento = document.querySelector(".peliculas")  
         for (let i = 0; i < 5; i++) {
             documento.innerHTML += `<article class="article">
                 <a href="./detallepelicula.html?id=${data.results[i].id}">
@@ -37,7 +37,7 @@ fetch(endPointSeriesPopulares)
 
     .then(function(data){
         console.log(data)
-        let documento = document.querySelector(".seriespopulares")  
+        let documento = document.querySelector(".series")  
         for (let i = 0; i < 5; i++) {
             documento.innerHTML += `<article class="article">
                 <a href="./detalleserie.html?id=${data.results[i].id}">
@@ -64,7 +64,7 @@ fetch(endPointPeliculasValoradas)
 
     .then(function(data){
         console.log(data)
-    let documento = document.querySelector(".pelisvaloradas")  
+    let documento = document.querySelector(".peliculas2")  
     for (let i = 0; i < 5; i++) {
         documento.innerHTML += `<article class="article">
             <a href="./detallepelicula.html?id=${data.results[i].id}">
