@@ -196,17 +196,20 @@ a{
 }
 
 /*--DETALLE GENERO--*/
+
+.maingenero{display: flex;
+    flex-direction: row;
+   }
 .imgdetallegenero{
     height: 300px;
 }
-.sectiondetallegenero{
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
+.sectiondetallegenero{ padding: 10px;
 }
 .h4detallegenero{
     display: flex;
     justify-content: center;
+}
+.articledetallegeneroserie { padding: 10px;
 }
 
 /*--FAVORITOS--*/
@@ -240,7 +243,10 @@ a{
     margin: 5px;
     border-radius: 5%;
 } 
-
+.articledetallegeneroserie {    display: flex;
+    align-items:center;
+    justify-content: center;
+}
 @media (max-width:420px) {
     .body{
         background-color: rgb(22, 21, 21);}
