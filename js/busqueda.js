@@ -14,7 +14,7 @@ fetch(resultados)
 
         let info = data.results;
         let search = document.querySelector(".resbusqueda");
-        let peliculaSearch = document.querySelector(".contenedorresultados");
+        let peliculaSearch = document.querySelector(".maingenero");
 
         if (info.length == 0) {
             search.innerHTML = `No se encontró ningún resultado que coincida con ${aBuscar}`;

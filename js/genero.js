@@ -1,9 +1,9 @@
-let api_key =  "e621099aa015b1afedfca7df020f6e6b";
+let apikey = "e62f099aa015b1afedfca7df020f6e6b";
 let queryString = location.search;
 let sToObj = new URLSearchParams(queryString);
 let id = sToObj.get("id");
-let urlgpeliculas =  `https://api.themoviedb.org/3/genre/movie/list?api_key=${api_key}`
-let urlgseries =  `https://api.themoviedb.org/3/genre/tv/list?api_key=${api_key}`
+let urlgpeliculas =  `https://api.themoviedb.org/3/genre/movie/list?api_key=${apikey}`
+let urlgseries =  `https://api.themoviedb.org/3/genre/tv/list?api_key=${apikey}`
 
 fetch(urlgpeliculas)
     .then(function(response){
