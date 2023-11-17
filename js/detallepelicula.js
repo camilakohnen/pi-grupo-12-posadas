@@ -17,6 +17,10 @@ let boton = document.querySelector("#recom");
 let container = document.querySelector(".reco-container")
 let recomenDisplay = document.querySelector(".recomendar");
 
+let Trailer = document.querySelector(".trailer");
+let urlTrailer = `https://api.themoviedb.org/3/movie/${id}/videos?api_key=${apiKey}`;
+
+
 
 
 
@@ -83,4 +87,29 @@ fetch(url4)
                 console.log(error);
             })
         })
+    
+        // Adicional Trailer
+
+    fetch(urlTrailer)
+        .then(function (response) {
+            return response.json()
+        })
+        .then(function (data) {
+            console.log(data.results);
+            Trailer.innerHTML = `<iframe width="420" height="300" src="https://www.youtube.com/embed/${data.results[0].key}?si=iiP5A0Grbeb8srOu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`
+            if (video == null){
+                return 'No hay trailer disponible'
+            } else{
+                for (let i = 0; i < 5; i++) {
+                    Trailer.innerHTML += `${data.results[i].title}`
+            
+                }
+            }
+        })
+        .catch(function(error){
+            console.log(error);
+   
+        })
+
+   
     

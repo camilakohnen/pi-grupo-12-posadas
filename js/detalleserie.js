@@ -16,7 +16,7 @@ let iconoss = document.querySelector(".iconos");
 let boton = document.querySelector("#recom");
 let container = document.querySelector(".reco-container")
 let recomenDisplay = document.querySelector(".recomendar");
-let genero = document.querySelector(".parrafo")
+let genero = document.querySelector(".parrafo");
 
 
 fetch(url4)
@@ -81,5 +81,3 @@ fetch(url4)
                 console.log(error);
             })
         })
-
-
