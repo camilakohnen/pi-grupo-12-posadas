@@ -15,7 +15,7 @@ fetch(urlgpeliculas)
         let pys  = document.querySelector(".sectionpeliculas")
         for (let index = 1; index < 10; index++){
             pys.innerHTML += `<ul> 
-            <li> <a class="listadetallegenero" href="./detallegenero.html?idgenero=${data.genres[index].id}"> ${data.genres[index].name}</a></li>
+            <li> <a class="listadetallegenero" href="./detallegenero.html?idgen=${data.genres[index].id}&nombreGen=${data.genres[index].name}"> ${data.genres[index].name}</a></li>
      
         </ul>`}
     })
@@ -33,7 +33,7 @@ fetch(urlgpeliculas)
         let pys  = document.querySelector(".sectionseries")
         for (let index = 1; index < 10; index++){
             pys.innerHTML += `<ul> 
-            <li> <a class="listadetallegenero" href="./detallegenero.html?idgenero=${data.genres[index].id}"> ${data.genres[index].name}</a></li>
+            <li> <a class="listadetallegenero" href="./detallegenero.html?idgen=${data.genres[index].id}"> ${data.genres[index].name}</a></li>
      
         </ul>`}
     })
